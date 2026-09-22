@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>💬 Whatsappautomatin &mdash; Erion Nezha</title>
+<meta name="description" content="Dërgim automatik i mesazheve WhatsApp me Python (pywhatkit) — cakto numrin, mesazhin në shqip dhe orën.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--gold:#ffc857;--gold-dim:#b98a1e;--bg:#0a0a10;--card:#12121a;--line:#23232f;--txt:#e8e6df;--mut:#9a9789;--blue:#7ee0ff}
+body{background:var(--bg);color:var(--txt);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;min-height:100vh}
+.hero{text-align:center;padding:72px 20px 40px;background:radial-gradient(ellipse at 50% -50%,#2a2111 0%,transparent 60%)}
+.badge{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);border-radius:999px;padding:6px 18px;font-size:12px;letter-spacing:3px;text-transform:uppercase;margin-bottom:22px}
+.hero h1{font-size:clamp(30px,5.5vw,56px);letter-spacing:2px;background:linear-gradient(180deg,#ffe9b0,var(--gold) 60%,#8a6410);-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800}
+.hero p{color:var(--mut);max-width:660px;margin:18px auto 0;line-height:1.7;font-size:16px}
+.stack{display:flex;gap:10px;justify-content:center;margin-top:20px;flex-wrap:wrap}
+.stack span{border:1px solid var(--line);background:var(--card);color:var(--blue);border-radius:8px;padding:6px 14px;font-size:13px;font-family:Consolas,monospace}
+.stats{display:flex;gap:14px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+.stat{border:1px solid var(--line);background:var(--card);border-radius:12px;padding:12px 26px}
+.stat b{color:var(--gold);font-size:24px;display:block}
+.stat span{color:var(--mut);font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px 60px}
+.codecard{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.codecard header{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid var(--line)}
+.codecard header h3{color:var(--gold);font-size:18px}
+.codecard header h3 small{color:var(--mut);font-weight:400}
+.codebox{overflow:auto;padding:20px 22px;max-height:70vh}
+pre{font-family:'Cascadia Code',Consolas,monospace;font-size:13px;line-height:1.65;counter-reset:ln}
+pre .row{display:block;white-space:pre}
+pre .row::before{counter-increment:ln;content:counter(ln);display:inline-block;width:44px;color:#4a4a58;text-align:right;margin-right:16px;user-select:none}
+.k{color:#ff7edb}.s{color:#ffc857}.c{color:#6a6a78;font-style:italic}.n{color:#7ee0ff}
+.codecard footer{display:flex;gap:10px;padding:16px 22px;border-top:1px solid var(--line)}
+.btn{flex:1;text-align:center;border-radius:10px;padding:10px;font-size:14px;cursor:pointer;text-decoration:none;transition:.2s;border:1px solid var(--gold-dim)}
+.btn.view{background:var(--gold);color:#111;font-weight:700;border-color:var(--gold)}
+.btn.gh{background:transparent;color:var(--gold)}
+.howto{max-width:960px;margin:0 auto 50px;padding:0 20px}
+.howto .box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px}
+.howto h2{color:var(--gold);margin-bottom:14px;font-size:20px}
+.howto ol{margin-left:20px;color:var(--mut);line-height:2;font-size:15px;list-style:none}
+.howto code{background:#0a0a10;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--blue);font-family:Consolas,monospace;font-size:13px}
+footer.page{text-align:center;padding:34px 20px;border-top:1px solid var(--line);color:var(--mut);font-size:13px}
+footer.page a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="badge">Python &bull; Automation</div>
+<h1>WHATSAPP AUTOMATION</h1>
+<p>Dërgim automatik i mesazheve WhatsApp me Python (pywhatkit) — cakto numrin, mesazhin në shqip dhe orën.</p>
+<div class="stack"><span>Python</span><span>pywhatkit</span></div>
+<div class="stats"><div class="stat"><b>6</b><span>Lines of code</span></div><div class="stat"><b>1</b><span>Message</span></div><div class="stat"><b>100%</b><span>Python</span></div></div>
+</div>
+<div class="wrap"><div class="codecard">
+<header><h3 id="ctitle"></h3></header>
+<div class="codebox"><pre id="ccode"></pre></div>
+<footer>
+<button class="btn view" id="copyBtn" onclick="copyCode()">📋 Copy code</button>
+<a class="btn gh" id="ghBtn" target="_blank" rel="noopener">View on GitHub ↗</a>
+</footer>
+</div></div>
+<div class="howto"><div class="box">
+<h2>▶ Si ekzekutohet / How to run</h2>
+<ol><li>Instalo: <code>pip install pywhatkit</code></li><li>Ekzekuto: <code>python Whatsappautomatin.py</code></li></ol>
+</div></div>
+<footer class="page">Copyright &copy; 2026 <a href="https://github.com/ErionNezha">Erion Nezha</a>. All rights reserved.</footer>
+<script>
+const P = [{"n": 1, "file": "Whatsappautomatin.py", "title": "Whatsappautomatin.py", "desc": "D\u00ebrgim automatik i mesazheve WhatsApp me Python (pywhatkit) \u2014 cakto numrin, mesazhin n\u00eb shqip dhe or\u00ebn.", "cat": "Source", "lines": 6, "code": "# Dergim automatik i mesazheve WhatsApp \u2014 nga Erion Nezha (c) 2026.\n# Kerkohet: pip install pywhatkit\nimport pywhatkit as kit\n\n# Dergon nje mesazh WhatsApp ne oren 13:10\nkit.sendwhatmsg(\"+3556XXXXXXXX\", \"P\u00ebrsh\u00ebndetje! \ud83d\ude0a\", 13, 10)\n", "blob": "https://github.com/ErionNezha/Whatsapp-Automation/blob/main/Whatsappautomatin.py"}];
+const p = P[0];
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function hl(code){
+  var re = new RegExp('("[^"\n]*"|\'[^\'\n]*\')|(#[^\n]*)|\\b(import|from|as|def|return|for|while|in|if|elif|else|with|class|pass|break|continue|lambda|try|except|True|False|None)\\b|\\b(\\d+\\.?\\d*)\\b', 'g');
+  return esc(code).split('\n').map(function(line){
+    var out='', last=0, m; re.lastIndex=0;
+    while((m = re.exec(line))){
+      out += line.slice(last, m.index);
+      var tok = m[0];
+      if(m[1]) out += '<span class="s">'+tok+'</span>';
+      else if(m[2]) out += '<span class="c">'+tok+'</span>';
+      else if(m[3]) out += '<span class="k">'+tok+'</span>';
+      else if(m[4]) out += '<span class="n">'+tok+'</span>';
+      last = m.index + tok.length;
+      if(tok.length === 0) re.lastIndex++;
+    }
+    out += line.slice(last);
+    return '<span class="row">'+(out||' ')+'</span>';
+  }).join('');
+}
+document.getElementById('ctitle').innerHTML = esc(p.title)+' <small>'+esc(p.file)+' · '+p.lines+' lines</small>';
+document.getElementById('ccode').innerHTML = hl(p.code);
+document.getElementById('ghBtn').href = p.blob;
+function copyCode(){navigator.clipboard.writeText(p.code).then(function(){var b=document.getElementById('copyBtn');b.textContent='✅ Copied!';setTimeout(function(){b.textContent='📋 Copy code';},1500);});}
+</script>
+</body>
+</html>
