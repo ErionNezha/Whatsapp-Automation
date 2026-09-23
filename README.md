@@ -1,5 +1,7 @@
 # 💬 Whatsapp Automation 🇦🇱
 
+Created by **Erion Nezha**
+
 > Dërgim automatik i mesazheve WhatsApp me Python (pywhatkit) — cakto numrin, mesazhin në shqip dhe orën.
 
 ![Pamje nga demo](screenshot.png)
